@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  background-color: #000000;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.texto-regular {
+  font-weight: 400;
+}
+
+/* ----- HEADER ----- */
+.contenido-encabezado {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: url("../img/bg-header-vineta-sm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 100px 150px rgba(0, 0, 0, 0.4);
+}
+
+.texto-encabezado {
+  color: #FFFFFF;
+}
+.texto-encabezado .icono {
+  font-size: 40px;
+  margin-bottom: 0;
+  font-size: 60px;
+  animation: naranja-neon 2s infinite alternate;
+}
+.texto-encabezado .titulo {
+  font-weight: 700;
+  font-size: 50px;
+  animation: azul-neon 2s infinite alternate;
+}
+.texto-encabezado .titulo-naranja-neon {
+  margin-bottom: 0;
+  font-size: 60px;
+  animation: naranja-neon 2s infinite alternate;
+}
+.texto-encabezado .descripcion {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.texto-encabezado .descripcion::first-line {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 6px dotted #D79E5B;
+  border-radius: 60px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 4px #FFFFFF, 2px 2px 10px #FFF000, 2px -2px 20px #FF8000;
+  transition: 0.5s ease;
+}
+.btn-link:hover {
+  text-shadow: none;
+  border: 6px dotted rgba(255, 255, 255, 0.5);
+}
+
+/* ----- MAIN ----- */
+main {
+  color: #FFFFFF;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 100;
+  position: relative;
+  margin-top: 100vh;
+}
+main .contenedor {
+  padding: 50px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+main .subtitulo-h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+main .letra-capital {
+  font-size: 55px;
+  font-family: serif;
+  margin-right: 10px;
+  line-height: 15px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* ----- ANIMACIONES ----- */
+@keyframes azul-neon {
+  0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+    text-shadow: 9px 9px 18px #3485FF, 3px 3px 5px #00246C, -3px -3px 5px #00246C, -9px -9px 27px #3485FF;
+  }
+  10%, 15%, 60% {
+    text-shadow: none;
+  }
+}
+@keyframes naranja-neon {
+  0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+    text-shadow: 0px -1px 4px #FFFFFF, 0px -2px 10px #FFF000, 0px -10px 20px #FF8000;
+  }
+  10%, 15%, 60% {
+    text-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
